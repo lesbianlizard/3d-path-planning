@@ -1,0 +1,20 @@
+#ifndef VERTEX_HPP
+#define VERTEX_HPP
+
+#include <vector>
+
+class Vertex
+{
+  private:
+    Position pos;
+    std::vector<Vertex> points_to; 
+  public:
+    double distanceTo(Vertex vertex);
+
+    Position getPosition();
+    void setPosition(Position pos_new);
+    std::vector<Vertex> getVerticies();
+    void addVertex(Vertex vert_new);
+}
+
+#endif
