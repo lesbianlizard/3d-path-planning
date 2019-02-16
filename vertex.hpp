@@ -14,7 +14,7 @@ class Vertex
     Position getPosition();
     void setPosition(Position pos_new);
     std::vector<Vertex*> getVerticies();
-    void addVertex(Vertex* vert_new);
+    void connect(Vertex* vert_new);
 }
 
 #endif
