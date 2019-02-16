@@ -7,14 +7,14 @@ class Vertex
 {
   private:
     Position pos;
-    std::vector<Vertex> points_to; 
+    std::vector<Vertex*> points_to;
   public:
-    double distanceTo(Vertex vertex);
+    double distanceTo(Vertex* vertex);
 
     Position getPosition();
     void setPosition(Position pos_new);
-    std::vector<Vertex> getVerticies();
-    void addVertex(Vertex vert_new);
+    std::vector<Vertex*> getVerticies();
+    void addVertex(Vertex* vert_new);
 }
 
 #endif
