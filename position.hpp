@@ -17,7 +17,8 @@ class Position
     void sety(FLOAT_TYPE y_new);
     void setz(FLOAT_TYPE z_new);
 
-    Position(x_new, y_new, z_new) : x_pos(x_new), y_pos(y_new), z_pos(z_new) {}
+    Position() : x_pos(0), y_pos(0), z_pos(0) {}
+    Position(FLOAT_TYPE x_new, FLOAT_TYPE y_new, FLOAT_TYPE z_new) : x_pos(x_new), y_pos(y_new), z_pos(z_new) {}
 };
 
 #endif
