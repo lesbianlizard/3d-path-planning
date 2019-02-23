@@ -1,5 +1,5 @@
 #include <iostream>
-#include "../position.hpp"
+#include "position.hpp"
 
 int main(int argc, char** argv)
 {
