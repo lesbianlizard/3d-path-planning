@@ -1,15 +1,15 @@
 #ifndef VERTEX_HOLDER
 #define VERTEX_HOLDER
 
-#include "vector.hpp"
+#include "vertex.hpp"
 
 class VertexHolder
 {
 	public:
-	vertex * pointer;
+	Vertex * pointer;
 	int value = 1000000;
 	bool visited = false;
-	vertex * last_vertex;
+	Vertex * last_vertex;
 };
 
 #endif
