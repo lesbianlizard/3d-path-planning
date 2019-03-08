@@ -28,6 +28,9 @@ $(OBJ_DIR)/%$(EXT_OBJ): $(INCLUDE_DIR)/%$(EXT_CXX)
 tests/test_position: $(SRC_DIR)/tests/test_position.cpp $(OBJ_DIR)/position.o
 	$(CXX) $(CXXFLAGS) $^ -o $(BIN_DIR)/$@
 
+tests/test_vertex: $(SRC_DIR)/tests/test_vertex.cpp $(OBJ_DIR)/vertex.o $(OBJ_DIR)/position.o
+	$(CXX) $(CXXFLAGS) $^ -o $(BIN_DIR)/$@
+
 clean:
 	rm $(RMFLAGS) $(BIN_DIR)/* $(OBJ_DIR)/*
 
