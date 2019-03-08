@@ -2,6 +2,7 @@
 #define VERTEX_HPP
 
 #include "position.hpp"
+#include "config.hpp"
 #include <vector>
 
 class Vertex
@@ -10,7 +11,7 @@ class Vertex
     Position pos;
     std::vector<Vertex*> points_to;
   public:
-    double distanceTo(Vertex* vertex);
+    FLOAT_TYPE distanceTo(Vertex* vertex);
     Position* getPosition();
     void setPosition(Position* pos_new);
     std::vector<Vertex*>* pointsTo();

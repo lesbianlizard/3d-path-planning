@@ -10,7 +10,7 @@ class Djikstras
 	private:
 		std::vector <VertexHolder *> vertexArray;
 		std::vector <Vertex *> badVerticies;	
-	 std::vector <Vertex *> shortestPath;
+	 	std::vector <Vertex *> shortestPath;
 		Vertex * start;
 		Vertex * end;
 		int startIndex;

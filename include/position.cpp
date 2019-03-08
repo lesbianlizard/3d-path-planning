@@ -1,4 +1,5 @@
 #include "position.hpp"
+#include "config.hpp"
 
 FLOAT_TYPE Position::x(){
   return this->x_pos;

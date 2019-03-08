@@ -1,12 +1,13 @@
 #include "vertex.hpp"
 #include "position.hpp"
+#include "config.hpp"
 #include <cmath>
 
 bool Vertex::compareVerticies(Vertex* a,Vertex* b)
 {
 	if(a->pos.x() == b->pos.x() &&
 			a->pos.y() == b->pos.y() &&
-			a->pos.z() == b->pos.z()) 
+			a->pos.z() == b->pos.z())
 	{
 		return true;
 	}
@@ -16,7 +17,7 @@ bool Vertex::compareVerticies(Vertex* a,Vertex* b)
 		}
 }
 
-double Vertex::distanceTo(Vertex* vertex)
+FLOAT_TYPE Vertex::distanceTo(Vertex* vertex)
 {
  return std::sqrt( std::pow((this->pos.x() - vertex->pos.x()), 2.0) +
                    std::pow((this->pos.y() - vertex->pos.y()), 2.0) + 
