@@ -73,4 +73,6 @@ int main (int argc, char** argv)
 
   delete pos_new;
   delete vertex2;
+  delete vertex3;
+  delete vertex4;
 }
