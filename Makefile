@@ -31,6 +31,8 @@ tests/test_position: $(SRC_DIR)/tests/test_position.cpp $(OBJ_DIR)/position.o
 tests/test_vertex: $(SRC_DIR)/tests/test_vertex.cpp $(OBJ_DIR)/vertex.o $(OBJ_DIR)/position.o
 	$(CXX) $(CXXFLAGS) $^ -o $(BIN_DIR)/$@
 
+tests: tests/test_position tests/test_vertex
+
 clean:
 	rm $(RMFLAGS) $(BIN_DIR)/* $(OBJ_DIR)/*
 
