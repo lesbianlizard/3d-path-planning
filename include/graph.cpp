@@ -1,5 +1,6 @@
 #include "graph.hpp"
 #include "config.hpp"
+#include "vertex.hpp"
 
 Vertex* Graph::getStart(){
   return this->vertex_start;
